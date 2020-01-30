@@ -1,0 +1,158 @@
+/*
+Colors:
+  Light green: #7ed56f
+  Medium green: #55c57a
+  Dark green: #28b485
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #777;
+  scroll-behavior: smooth;
+}
+
+.header {
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, #7ed56fbb, #28b485c2),
+    url(../images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.logo-container {
+  font-size: 40px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.heading-main {
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 35px;
+}
+
+.heading-subsection {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 7.5px;
+}
+
+.contact-me {
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  background-color: #28b485;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+}
+
+.section-container {
+  max-width: 1400px;
+  margin: 20px auto;
+}
+
+.section-heading {
+  text-align: center;
+  margin: 20px;
+}
+
+.scroll-container {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.icon-container {
+  text-align: center;
+}
+
+.linked-in-container {
+  text-align: center;
+}
+
+.linked-in-link {
+  margin-bottom: 40px;
+  color: #28b485;
+  font-size: 20px;
+}
+
+.linked-in-link:hover {
+  font-weight: 600;
+}
+
+.linked-in-link:visited {
+  color: #777;
+}
+
+/* Apply media query on screens smaller than 720px */
+@media screen and (max-width: 720px) {
+  /* Remove image on smaller screens */
+  .header {
+    background-image: linear-gradient(to right bottom, #7ed56fbb, #28b485c2);
+  }
+  .logo-container {
+    font-size: 30px;
+    top: 20px;
+    left: 20px;
+  }
+
+  .heading-main {
+    font-size: 30px;
+    letter-spacing: 20px;
+    text-indent: 20px;
+  }
+
+  .heading-subsection {
+    font-size: 10px;
+    letter-spacing: 4.3px;
+    text-indent: 20px;
+  }
+}
+.linkin-in-linkt:hover{
+  font-weight: 600;
+  font-size: 50px;
+  color: red;
+  
+
+}
+.linkin-in-linkt:visited{
+  color: #777;
+}
+.latest-project-container{
+  background-color: #d3d3d3;
+  padding: 20px;
+
+
+}
+.latest-project-inner-container{
+  text-align: center;
+  max-width: 1400px;
+  margin: auto;
+
+}
